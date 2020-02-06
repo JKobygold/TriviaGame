@@ -1,0 +1,26 @@
+
+body { 
+	background-image:url(https://ecdn.teacherspayteachers.com/thumbitem/PowerpointSmartboard-Jeopardy-Blank-Template-1516885746/original-481227-1.jpg);
+}
+
+html {
+	cursor: url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi4g56X_6bnAhWllnIEHVn6CUoQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.medicalnewstoday.com%2Farticles%2F324998.php&psig=AOvVaw3gJ9NxEXJSA2I6LVURfJBv&ust=1580324905869029), auto;
+}
+
+
+.container{
+    margin-top: 100px ;
+    background-color: red;
+}
+
+.jumbotron {
+    margin-top: 20px;
+}
+
+#timer {
+	font-weight: 900;
+}
+
+#start {
+	color: black;
+}
