@@ -17,9 +17,21 @@
 
 	<div class="jumbotron text-center" id="gameScreen">
     <h1 id="topText">kinda-like-Jeopardy: Totally Trivial trivia!</h1>   
-        <div id="start">START</div>
-
+        <button id="start">START</button>
+    
+   
+           <div id = "timer"> 
        <h2> Time remaining: <span id = "time"> </span> seconds!  </h2>
+           </div>
+
+           <div class = "Results">
+                <h2> All done! </h2>
+                 <p>correct ansers:</p><span id = "correct"> </span> 
+                 <p> Incorrect answers:</p> <span id = "incorrect"> </span>
+                 <p>unanswered:</p> <span id = "incorrect"> </span>
+        </div>
+
+
   <div id ="quiz" >
      <div id = "container">
         <div class = "row">
@@ -28,57 +40,56 @@
        <form  name = "quiz" onsubmit = "return onsubmit()">
         <div class = "question1">
           <h2>By recent estimations, when do physists presently say the big bang occured?</h2>
-        <input  type="radio" name = "q1" value ="a"> a. 5 billion years ago<br>
-        <input type="radio" name = "q1" value ="b"> b. 13.8 billion years ago<br>
-        <input type="radio" name = "q1" value ="c"> c. 12.2 Billion years ago<br>
-        <input type="radio" name = "q1" value ="d"> d. 8 Billion years ago<br>
+        <input  type="radio" name = "q1" value ="wrong"> a. 5 billion years ago<br>
+        <input type="radio" name = "q1" value ="correct"> b. 13.8 billion years ago<br>
+        <input type="radio" name = "q1" value ="wrong"> c. 12.2 Billion years ago<br>
+        <input type="radio" name = "q1" value ="wrong"> d. 8 Billion years ago<br>
         </div>
         <div class = "row">
                 <div class = col-md-12>
         <div class = "question1">
                 <h2>Which planets weird axis around the sun indicated to physists that there were some minor issues with Newton's theory of gravity?  </h2>
-              <input type="radio" name = "q2" value ="a"> a. Earth<br>
-              <input type="radio" name = "q2" value ="b"> b. Mars<br>
-              <input type="radio" name = "q2" value ="c"> c. Mercuary<br>
-              <input type="radio" name = "q2" value ="d"> d. Venus<br>
+              <input type="radio" name = "q2" value ="wrong"> a. Earth<br>
+              <input type="radio" name = "q2" value ="wrong"> b. Mars<br>
+              <input type="radio" name = "q2" value ="correct"> c. Mercuary<br>
+              <input type="radio" name = "q2" value ="wrong"> d. Venus<br>
               </div>
               <div class = "row">
                     <div class = col-md-12>
               <div class = "question1">
                     <h2>Which scientist was the first to bush a theory of evoloution?</h2>
-                  <input type="radio" name = "q3" value ="a"> a. Darwin<br>
-                  <input type="radio" name = "q3" value ="b"> b. Mendel<br>
-                  <input type="radio" name = "q3" value ="c"> c. Gould  <br>
-                  <input type="radio" name = "q3" value ="d"> d. Lamarck<br>
+                  <input type="radio" name = "q3" value ="wrong"> a. Darwin<br>
+                  <input type="radio" name = "q3" value ="wrong"> b. Mendel<br>
+                  <input type="radio" name = "q3" value ="wrong"> c. Gould  <br>
+                  <input type="radio" name = "q3" value ="wrong"> d. Lamarck<br>
                   </div>
                   <div class = "row">
                         <div class = col-md-12>
                   <div class = "question1">
                         <h2>Which of these is false?</h2>
-                      <input type="radio" name = "q4" value ="a"> a. Pangea was the first super continent<br>
-                      <input type="radio" name = "q4" value ="b"> b. Einstein did not a nobel prize for his Relativity theories <br>
-                      <input type="radio" name = "q4" value ="c"> c. Trump was aquitted in his 2020 impeachment trial<br>
-                      <input type="radio" name = "q4" value ="d"> d. Ivan the terrible was the first tsar of russia<br>
+                      <input type="radio" name = "q4" value ="wrong"> a. Pangea was the first super continent<br>
+                      <input type="radio" name = "q4" value ="wrong"> b. Einstein did not a nobel prize for his Relativity theories <br>
+                      <input type="radio" name = "q4" value ="wrong"> c. Trump was aquitted in his 2020 impeachment trial<br>
+                      <input type="radio" name = "q4" value ="wrong"> d. Ivan the terrible was the first tsar of russia<br>
                       </div>
                       <div class = "row">
                             <div class = col-md-12>
                       <div class = "question1">
                             <h2>When was the name of the supreme document in the American legal system prior to the ratification of the constitution?</h2>
-                          <input type="radio" name = "q5" value ="a"> a. Magna carta<br>
-                          <input type="radio" name = "q5" value ="b"> b. Juris prudentzia<br>
-                          <input type="radio" name = "q5" value ="c"> c. Bill of right<br>
-                          <input type="radio" name = "q5" value ="d"> d. Articles of confederation<br>
+                          <input type="radio" name = "q5" value ="wrong"> a. Magna carta<br>
+                          <input type="radio" name = "q5" value ="wrong"> b. Juris prudentzia<br>
+                          <input type="radio" name = "q5" value ="wrong"> c. Bill of right<br>
+                          <input type="radio" name = "q5" value ="correct"> d. Articles of confederation<br>
                           </div>
                           <div class = "row">
                                 <div class = col-md-12>
                           <div class = "question1">
                                 <h2>What is your quest?</h2>
-                              <input type="radio" name = "q6" value ="a"> a. To find the holy grail<br>
-                              <input type="radio" name = "q6" value ="b"> b. To save helen of troy<br>
-                              <input type="radio" name = "q6" value ="c"> c. To save ceaser from a terrible fate<br>
-                              <input type="radio" name = "q6" value ="d"> d. to save the middle class<br>
+                              <input type="radio" name = "q6" value ="correct"> a. To find the holy grail<br>
+                              <input type="radio" name = "q6" value ="correct"> b. To save helen of troy<br>
+                              <input type="radio" name = "q6" value ="correct"> c. To save ceaser from a terrible fate<br>
+                              <input type="radio" name = "q6" value ="wrong"> d. to save the middle class<br>
                               </div>
-
                             </form>
 
                         </div> 
@@ -86,7 +97,7 @@
                                 
                 </div>
             </div>
-            <button type ="submit" > Submit!</button>
+            <button id="submit"  type ="submit" > Submit!</button>
         </div>
    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
